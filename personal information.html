@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admission Form</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #533737;
+    margin: 0;
+    padding: 0;
+}
+#EI{
+    width: 22%;
+}
+#name{
+    width: 27%;
+}
+#Father,#Mother{
+    width: 15%;
+}
+#UM{
+    width: 15%;
+}
+#Pp,#Sp{
+    width: 17%;
+}
+#NOF,#NOS{
+    width: 18%;
+
+}
+#ABC{
+    width: 13%;
+}
+#Address{
+    width: 35%;
+}
+#dob{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.container {
+    max-width: 1250px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    
+   
+}
+
+label {
+    margin-bottom: 8px;
+    padding: 5px;
+}
+select{
+    margin-bottom: 16px;
+    width: 15%;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+input,
+Address {
+    margin-bottom: 16px;
+    padding: 10px;
+    width: 12%;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: Numberne;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+    <!-- <script>
+   
+   document.getElementById('admissionForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    // You can add form validation and submission logic here
+    // For simplicity, we'll just log the form data to the console
+    console.log('Form submitted!');
+    console.log('Name:', document.getElementById('name').value);
+    console.log('Email:', document.getElementById('email').value);
+    console.log('Date of Birth:', document.getElementById('dob').value);
+    console.log('BG:', document.getElementById('BG').value);
+    console.log('Course:', document.getElementById('course').value);
+    console.log('Additional Information:', document.getElementById('message').value);
+          });
+ 
+    </script> -->
+</head>
+
+<body>
+   
+    <div class="container">
+        <form id="admissionForm">
+            <div class="PF">
+                <table>
+            <h3>1.Personal Information</h3>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+            <span>   </span>
+            <label for="Father">Father's/Husband's Name:</label>
+            <input type="text" id="Father" name="Father" placeholder="Enter Father Name" required>
+
+            <label for="Mother">Mother's Name:</label>
+            <input type="text" id="Mother" name="Mother" placeholder="Enter Mother Name" required>
+            <br>
+            <label for="POF"> Place Of Birth :</label>
+            <input type="text" id="POF" name="POF" placeholder="Enter Place Of Birth" required>
+
+            <label for="Ms">Marital Status :</label>
+            <select name="ms" id="ms" required>
+                <option value="select">Select</option>
+                <option value="Married">Married</option>
+                <option value="Unmarried">Unmarried</option>
+            </select>
+
+            <label for="MT">Mother Tongue :</label>
+            <select name="MT" id="MT" required>
+                <option value="select">Select</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Urdu">Urdu</option>
+            </select>
+
+            <label for="Gender">Gender :</label>
+            <select id="Gender" name="Gender" required>
+                <option value="select">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="dob">Date of Birth :</label>
+            <input type="date" id="dob" name="dob" required>
+            
+
+            <label for="BG">Blood Group :</label>
+            <select id="BG" name="BG" required>
+                <option value="Select">Select</option>
+                <option value="APositive">APositive</option>
+                <option value="BPositive">BPositive</option>
+                <option value="OPositive">OPositive</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="Religion">Religion :</label>
+            <select id="Religion" name="Religion" required>
+                <option value="Select">Select</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Sikh">Sikh</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="POF"> Nationality Of  :</label>
+            <input type="text" id="POF" name="POF" placeholder="Enter Nationality Of" required>
+        
+            <br>
+            <label for="SNRI">In-House Student:</label>
+            <select name="SNRI" id="SNRI">
+                <option value="Select">Select</option>
+                <option value="Yes">Yes</option>
+                <option value="Number">Number</option>
+            </select>
+            <label for="DS">Domicile State:</label>
+            <select name="DS" id="DS">
+                <option value="Select">Select</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+
+            <label for="UM">University Pre-Registration Number. :</label>
+            <input type="text" id="UM" name="UM" placeholder="Enter University Pre-Registration Number" required>
+            <br>
+            <label for="ABC">ABC ID :</label>
+            <input type="text" id="ABC" name="ABC" placeholder="Enter ABC ID" required>
+                </table>
+            </div>
+            <br>
+            <h3>2.Address Details </h3>
+            
+            <label for="Address">Address For Correspondence :</label>
+            <input type="text" id="Address" name="Address"  maxlength="50" placeholder="Enter Address For Correspondence" required>
+
+            <label for="Pincode">Pin Code</label>
+            <input type="text" id="text" name="text" placeholder="Enter Pin Code" required>
+
+            <label for="S">State:</label>
+            <select name="S" id="S">
+                <option value="Select">Select</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Jharkhand">Jharkhand</option>
+            </select>
+
+            <label for="District">District :</label>
+            <select name="District" id="District">
+                <option value="Select">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Mumbai Suburban">Mumbai Suburban</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+            </select>
+
+            <label for="Tehsil">Tehsil :</label>
+            <select name="Tehsil" id="Tehsil">
+                <option value="Select">Select</option>
+                <option value="Kurla">Kurla</option>
+                <option value="Andheri">Andheri</option>
+                <option value="Belapur">Belapur</option>
+                <option value="Borivali">Borivali</option>
+                <option value="Dadar">Dadar</option>
+                <option value="Thane">Thane</option>
+                <option value="Kalyan">Kalyan</option>
+                <option value="Panvel">Panvel</option>
+                <option value="Virar">Virar</option>
+            </select>
+
+            <label for="City/Town/Village :">City/Town/Village/Area :</label>
+            <select name="City/Town/Village :" id="City/Town/Village :">
+                <option value="Select">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Mumbai Suburban">Mumbai Suburban</option>
+            </select>
+            <br>
+
+            <label for="Address">Address For Permanent :</label>
+            <input type="text" id="Address" name="Address"  maxlength="50" placeholder="Enter Address for Permanent" required>
+
+            <label for="Pincode">Pin Code</label>
+            <input type="text" id="text" name="text" placeholder="Enter Pin Code" required>
+
+            <label for="S">State:</label>
+            <select name="S" id="S">
+                <option value="Select">Select</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Jharkhand">Jharkhand</option>
+            </select>
+            <br>
+            <label for="District">District :</label>
+            <select name="District" id="District">
+                <option value="Select">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Mumbai Suburban">Mumbai Suburban</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+            </select>
+
+            <label for="Tehsil">Tehsil :</label>
+            <select name="Tehsil" id="Tehsil">
+                <option value="Select">Select</option>
+                <option value="Kurla">Kurla</option>
+                <option value="Andheri">Andheri</option>
+                <option value="Belapur">Belapur</option>
+                <option value="Borivali">Borivali</option>
+                <option value="Dadar">Dadar</option>
+                <option value="Thane">Thane</option>
+                <option value="Kalyan">Kalyan</option>
+                <option value="Panvel">Panvel</option>
+                <option value="Virar">Virar</option>
+            </select>
+
+            <label for="City/Town/Village :">City/Town/Village/Area :</label>
+            <select name="City/Town/Village :" id="City/Town/Village :">
+                <option value="Select">Select</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Mumbai Suburban">Mumbai Suburban</option>
+            </select>
+            <br>
+            
+            <h3>3.Contact Details</h3>
+            <label for="Pp">Parent phone :</label>
+            <input type="text" id="Pp" name="Pp" maxlength="10" placeholder="Enter Parent phone" required>
+            <label for="Sp">Student phone :</label>
+            <input type="text" id="Sp" name="Sp" maxlength="10" placeholder="Enter Student phone" required>
+            <label for="EI">Email Id :</label>
+            <input type="email" id="EI" name="EI" maxlength="" placeholder="example123@gmail.com" required>
+            <!--<label for="message">Additional Information:</label>
+            <Address id="message" name="message" rows="4"></Address> -->
+            <br>
+
+            <h3>4.Legal Reservation Information Section</h3>
+            <label for="DS">Domicile State</label>
+            <input type="text" id="DS" name="DS" placeholder="Enter Domicile State" required>
+
+            <label for="AG">Admission Category :</label>
+            <select name="AG" id="AG">
+                <option value="Select">Select</option>
+                <option value="GENERAL">GENERAL</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+                <option value="EWS">EWS</option>
+            </select>
+
+            <label for="AG">Caste :</label>
+            <select name="AG" id="AG">
+                <option value="Select">Select</option>
+                <option value="SSC">SSC</option>
+            </select>
+
+            <label for="Phy.Handicapped">Phy.Handicapped</label>
+            <input type="text" id="Phy.Handicapped" name="Phy.Handicapped" placeholder="Enter Phy.Handicapped" required>
+
+            <label for="Caste Certificate Number.">Caste Certificate Number.</label>
+            <input type="text" id="Caste Certificate Number." name="Caste Certificate Number." placeholder="Enter Caste Certificate Number." required>
+
+            <label for="Learning Disability Number :">Learning Disability Number :</label>
+            <input type="text" id="Learning Disability Number :" name="Learning Disability Number :" placeholder="Enter Learning Disability Number :" required>
+ 
+
+            <h3>5.Education Details Section</h3>
+
+            <select name="SSC" id="SSC">
+                <option value="Select">Select</option>
+                <option value="SSC">SSC</option>
+                <option value="11th">11th</option>
+            </select>
+
+            <label for="NOF">Name of Board</label>
+            <input type="text" id="NOF" name="NOF" placeholder="Enter name of Board" required>
+
+            <label for="NOS">Name of School</label>
+            <input type="text" id="NOS" name="NOS" placeholder="Enter Name of School" required>
+
+            <label for="Date of passing">Date of passing</label>
+            <input type="date" id="Date of passing" name="Date of passing" placeholder="Enter Date of passing" required>
+
+            <label for="Examination Seat Number.">Examination Seat Number.</label>
+            <input type="text" id="Examination Seat Number." name="Examination Seat Number." placeholder="Enter Examination Seat Number." required>
+
+            <label for="Total Marks">Total Marks</label>
+            <input type="text" id="Total Marks" name="Total Marks" placeholder="Enter Total Marks" required>
+
+            <label for="OM">Obtain Marks</label>
+            <input type="text" id="OM" name="OM" placeholder="Enter Obtain Marks" required>
+            <br>
+            <h3>6.Stream  Section</h3>
+            <label for="Standard">Which Standard ?</label>
+            <select name="Standard" id="Standard" required>
+                <option value="Select">Select</option>
+                <option value="Commerce">11th</option>
+                <option value="11th">12th</option>
+            </select>
+
+            <label for="Course">Which Course</label>
+            <select name="Course" id="Course">
+                <option value="Select">Select</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+            </select>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE ADMISSION REGISTRATION FROM</title>
+    <style>
+     
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            border-radius: 10px;
+            margin:  0;
+            display: inline-flex;
+            width: 100%;
+            height: 120px;
+            background-color: black;
+        }
+        .navbar .logo{
+            height: 100px;
+            width: 100px;
+            margin-left: 10px;
+        }
+        .navbar .logo img{
+            padding-top: 10px;
+            border-radius: 40%;
+        }
+        .navbar .title h1{
+            color: white;
+            font-size: 35px; 
+            padding-left: 90px;
+            padding-top: 20px;
+        }
+        .navbar .title p{
+            color: white;
+            padding-left: 30%;
+           
+        }
+        footer{
+            border-radius: 10px;
+            margin: 0;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .demo{
+            height: 400px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            background-image: url(bandra.jpg);
+            background-size: 1500px 700px;
+            padding-top: 60px;
+            
+            
+        }
+        .container{
+            
+            margin: 0 40px 0 130px;
+            height: 70%;
+            padding-top: 40px;
+            width: 80%;
+            
+        }
+        .navbar .list{
+            margin: 20px;
+            padding: 10px;
+        }
+        .navbar .list a{
+           color: white;
+           text-decoration: none;
+           margin: 20px;
+           font-size: 20px;
+             
+        }
+        a:hover{
+            color: blue;
+        }
+        .navbar .list a.active{
+            background-color: bisque;
+        }
+        .row{
+         
+        }
+        .column{
+            margin: 30px;
+        }
+        
+        button{
+            border-radius: 5px;
+            background-color: red;
+            margin: 10px;
+            font-size: 30px;
+            width: 30%;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        input[type=text],input[type=password],input[type=tel]{
+            background-color: antiquewhite;
+            border-radius: 5px;
+            width: 20%;
+            margin: 5px;
+            padding: 13px;
+            font-size: 15px;
+        }
+        input[type=text]:focus ,input[type=password]:focus ,input[type=tel]:focus {
+            font-size: 10px;
+            
+        }
+        label{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="abc.jpeg" height="100px" width="150px">
+         
+        </div>
+        <div class="title">
+            <h1>IDEAL HIGH SCHOOL AND JR.COLLEGE</h1>
+            <P>Cheeta Camp Trombay Mumbai-88</P>
+            
+        </div>
+        <div class="list">
+                <a href="IDEAL SCHOOL.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="#">Picture</a>
+                <a href="#">About</a>
+        </div>
+    </nav>
+    
+        <div class="demo">    
+            <div class="container">
+                <h1 style="text-align: center;">Online Registration Form</h1>
+                <div class="row">
+                    <div class="column">
+                        <Label>Username <span>*</span></Label>
+                        <input type="text" name="Username" placeholder="Enter Username" required>
+                        <label> Moblie No <span>*</span></label>
+                        <input type="tel" name="Moblie1" maxlength="10" placeholder="Enter Moblie No" required>
+                    </div>
+                    
+                    <div>
+                        <label>Password <span>*</span></label>
+                        <input type="password" name="password" placeholder="Enter password" required>
+                        <label>Re-password <span>*</span></label>
+                        <input type="password" name="password1" placeholder="Re-password" required>
+                        
+                    </div>
+                        <br>
+                        <button class="btn" type="submit">Register</button>
+                        <!-- <button class="btn" onclick="alert('Username And password Send To The Register Moblie Number')"><a href="#">Register</a></button> -->
+                </div>
+            </div>
+        </div>
+        
+    
+    <footer>
+        <p>Copyright © Online Admission - 2024</p>
+    </footer>
+</body>
+</html>
